@@ -151,35 +151,7 @@ class QuestionsActivity : AppCompatActivity(), View.OnClickListener {
     private fun checkAnswer() {
         answered = true
         if (selectedOptionPosition == currentQuestion.correctAnswer) {
-            when (selectedOptionPosition) {
-                1 -> {
-                    textViewOptionOne.background = ContextCompat.getDrawable(
-                        this,
-                        R.drawable.correct_option_border_bg
-                    )
-                }
-
-                2 -> {
-                    textViewOptionTwo.background = ContextCompat.getDrawable(
-                        this,
-                        R.drawable.correct_option_border_bg
-                    )
-                }
-
-                3 -> {
-                    textViewOptionThree.background = ContextCompat.getDrawable(
-                        this,
-                        R.drawable.correct_option_border_bg
-                    )
-                }
-
-                4 -> {
-                    textViewOptionFour.background = ContextCompat.getDrawable(
-                        this,
-                        R.drawable.correct_option_border_bg
-                    )
-                }
-            }
+            // showCorrectAnswer() before there was a switch statement but now no need
         } else {
             when (selectedOptionPosition) {
                 1 -> {
@@ -222,31 +194,34 @@ class QuestionsActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun showCorrectAnswer() {
-        if(currentQuestion.correctAnswer == 1) {
-            textViewOptionOne.background = ContextCompat.getDrawable(
-                this,
-                R.drawable.correct_option_border_bg
-            )
-            textViewOptionOne.typeface = Typeface.DEFAULT_BOLD
-        } else if(currentQuestion.correctAnswer == 2) {
-            textViewOptionTwo.background = ContextCompat.getDrawable(
-                this,
-                R.drawable.correct_option_border_bg
-            )
-            textViewOptionTwo.typeface = Typeface.DEFAULT_BOLD
+        when (currentQuestion.correctAnswer) {
+            1 -> {
+                textViewOptionOne.background = ContextCompat.getDrawable(
+                    this,
+                    R.drawable.correct_option_border_bg
+                )
+            }
 
-        } else if(currentQuestion.correctAnswer == 3) {
-            textViewOptionThree.background = ContextCompat.getDrawable(
-                this,
-                R.drawable.correct_option_border_bg
-            )
-            textViewOptionThree.typeface = Typeface.DEFAULT_BOLD
-        } else if(currentQuestion.correctAnswer == 4) {
-            textViewOptionFour.background = ContextCompat.getDrawable(
-                this,
-                R.drawable.correct_option_border_bg
-            )
-            textViewOptionFour.typeface = Typeface.DEFAULT_BOLD
+            2 -> {
+                textViewOptionTwo.background = ContextCompat.getDrawable(
+                    this,
+                    R.drawable.correct_option_border_bg
+                )
+            }
+
+            3 -> {
+                textViewOptionThree.background = ContextCompat.getDrawable(
+                    this,
+                    R.drawable.correct_option_border_bg
+                )
+            }
+
+            4 -> {
+                textViewOptionFour.background = ContextCompat.getDrawable(
+                    this,
+                    R.drawable.correct_option_border_bg
+                )
+            }
         }
     }
 }

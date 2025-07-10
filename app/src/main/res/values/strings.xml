@@ -10,4 +10,7 @@
     <string name="finish">FINISH</string>
     <string name="button_check">CHECK</string>
     <string name="button_next">NEXT</string>
+    <string name="hey_congratulations">Hey, Congratulations!</string>
+    <string name="result">Result</string>
+    <string name="picture_of_a_gold_trophy">Picture of a gold trophy</string>
 </resources>
