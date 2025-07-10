@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         startButton.setOnClickListener {
             if(!editTextName.text.isEmpty()) {
                 Intent(this@MainActivity, QuestionsActivity::class.java).also {
+                    it.putExtra("Username", editTextName.text.toString())
                     startActivity(it)
                     finish()
                 }

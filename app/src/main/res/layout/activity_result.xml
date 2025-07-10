@@ -15,47 +15,50 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/result"
+        android:layout_marginTop="50dp"
         android:textColor="#FDFDFD"
         android:textSize="34sp" />
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="186dp"
+        android:id="@+id/imageViewTrophy"
+        android:layout_width="wrap_content"
         android:layout_height="172dp"
         android:contentDescription="@string/picture_of_a_gold_trophy"
         android:src="@drawable/gold_trophy"
         />
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="133dp"
+        android:id="@+id/textViewCongratulations"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Username"
+        android:layout_marginTop="40dp"
+        android:text="@string/hey_congratulations"
+        android:textColor="#FFFDFD"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Username"
+        android:textStyle="bold"
         android:textColor="#FFFEFE"
         android:textSize="24sp" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textViewScore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Your Score is 9 out of 10"
+        tools:text="Your score is 6 out of 11"
         android:textSize="20sp" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="328dp"
-        android:layout_height="58dp"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_finish"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="@string/finish"
         android:textColor="@color/black"
         android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hey_congratulations"
-        android:textColor="#FFFDFD"
-        android:textSize="34sp" />
 
 </LinearLayout>

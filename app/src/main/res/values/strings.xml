@@ -13,4 +13,5 @@
     <string name="hey_congratulations">Hey, Congratulations!</string>
     <string name="result">Result</string>
     <string name="picture_of_a_gold_trophy">Picture of a gold trophy</string>
+    <string name="your_score_is_out_of">Your score is %1$d out of %2$d</string>
 </resources>
